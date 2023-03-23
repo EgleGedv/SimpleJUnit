@@ -35,6 +35,15 @@ class GraderTest {
         assertEquals('A', grader.determineLetterGrade(99));
     }
 
+    @Test
+    void negativeOneShouldReturnIllegalArgument(){
+        var grader = new Grader();
+        assertThrows(IllegalArgumentException.class,
+                () -> {
+                    grader.determineLetterGrade(-1);
+                });
+    }
+
 
 
 }
