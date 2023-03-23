@@ -16,7 +16,7 @@ public class Grader {
             return 'C';
         }
         else if (numberGrade < 90){
-            return 'D';
+            return 'B';
         }
         else {
             return 'A';
